@@ -15,7 +15,19 @@
 <body>
     <h2>Student Registration Form</h2>
     <form action="result.php" method="POST">
-    
+     
+     Student name: 
+    <input type="text" name="fname" placeholder="First Name"> 
+    <input type="text" name="lname" placeholder="Last Name"><br><br>
+
+    Father's name: 
+    <input type="text" name="father"><br><br>
+
+    Date of birth:
+    <input type="text" name="dob-day" placeholder="Day" size="2"> -
+    <input type="text" name="dob-month" placeholder="Month" size="2"> -
+    <input type="text" name="dob-year" placeholder="Year" size="4">
+    <span>(DD-MM-YYYY)</span><br><br>
     
     
     
