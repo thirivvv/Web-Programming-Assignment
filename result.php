@@ -18,7 +18,12 @@
   <?php
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
       
-    
+      $fname = $_POST['fname'] ?? '';
+      $lname = $_POST['lname'] ?? '';
+      $father = $_POST['father'] ?? '';
+      $day = $_POST['dob-day'] ?? '';
+      $month = $_POST['dob-month'] ?? '';
+      $year = $_POST['dob-year'] ?? '';
     
     
       $gender = $_POST['gender'] ?? '';
@@ -29,7 +34,12 @@
       
       $errors = [];
 
-      
+      if (empty($fname)) $errors[] = "First name is required.";
+      if (empty($lname)) $errors[] = "Last name is required.";
+      if (empty($father)) $errors[] = "Father's name is required.";
+      if (empty($day)) $errors[] = "Day is required.";
+      if (empty($month)) $errors[] = "Month is required.";
+      if (empty($year)) $errors[] = "Year is required.";
       
       if (empty($gender)) $errors[] = "Gender is required.";
       if (empty($departments)) $errors[] = "Department must be selected.";
