@@ -13,7 +13,7 @@
 <body>
   <h2>Student Registration Form</h2>
 
-  <form action="process.php" method="POST" novalidate>
+  <form action="result.php" method="POST" novalidate>
     Student name:
     <input type="text" name="fname" placeholder="First Name">
     <input type="text" name="lname" placeholder="Last Name"><br><br>
